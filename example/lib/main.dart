@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-
-import 'package:flutter/services.dart';
 import 'package:flutter_appclip_keychain/flutter_appclip_keychain.dart';
-import 'package:flutter_appclip_keychain/flutter_appclip_keychain_platform_interface.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +8,7 @@ void main() {
 
 class MyApp extends StatefulWidget {
   final shit;
-  const MyApp({super.key, this.shit});
+  const MyApp({this.shit});
 
   @override
   State<MyApp> createState() => _MyAppState();

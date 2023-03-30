@@ -35,13 +35,13 @@ public class FlutterAppclipKeychainPlugin: NSObject, FlutterPlugin {
   private func write(
     key: String?,
     value: String?,
-    suiteName: String?) -> Bool? {
+    suiteName: String?) -> String? {
     guard let sharedUserDefaults = UserDefaults(suiteName: suiteName)
         else {
-        return false
+        return "false"
     }
     sharedUserDefaults.set(value, forKey: key ?? "key")
-    return true
+    return "true"
   }
   private func read(key: String?,suiteName: String?) -> String? {
     guard let sharedUserDefaults = UserDefaults(suiteName: suiteName)

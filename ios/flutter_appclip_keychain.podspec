@@ -7,8 +7,6 @@ Pod::Spec.new do |s|
   s.version          = '0.0.1'
   s.summary          = 'ERK Labs'
   s.description      = 'Environmental Research and Kinetics Laboratory'
-A new Flutter project.
-                       DESC
   s.homepage         = 'http://erklabs.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'ERK Labs' => 'shantanu@erklabs.com' }

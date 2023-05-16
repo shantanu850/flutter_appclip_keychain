@@ -17,7 +17,7 @@ class MethodChannelFlutterAppclipKeychain
       <String, dynamic>{
         'key': key,
         'value': value,
-        'suite_name': suite,
+        'suite_name': suite??"",
       },
     );
     return version;
@@ -32,8 +32,8 @@ class MethodChannelFlutterAppclipKeychain
       'read',
       <String, dynamic>{
         'key': key,
-        'value': null,
-        'suite_name': suite,
+        'value': "",
+        'suite_name': suite??"",
       },
     );
   }
@@ -43,9 +43,9 @@ class MethodChannelFlutterAppclipKeychain
     return await methodChannel.invokeMethod(
       'uuid',
       <String, dynamic>{
-        'key': null,
-        'value': null,
-        'suite_name': null,
+        'key': "",
+        'value': "",
+        'suite_name': "",
       },
     );
   }
